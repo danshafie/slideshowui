@@ -32,13 +32,14 @@ class Carousel extends Component {
         {this.props.scores.map(game => {
           return (
             <div className='tile'>
-              <div className='tile__details'>
-                <div className='tile_title'>                  
+                <div className='game_title'>
                   {game.game_media.media[0].title}
                 </div>
-              </div>
               <div className='tile__media'>
                 <img className='tile__img' src={game.video_thumbnails.thumbnail[0].content} />
+              </div>
+              <div className='game_description'>
+                {game.venue}
               </div>
             </div>
 
