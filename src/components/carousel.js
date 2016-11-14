@@ -31,7 +31,7 @@ class Carousel extends Component {
           <div className='row__inner'>
         {this.props.scores.map(game => {
           return (
-            <div className='tile'>
+            <div className='tile' key={game.away_team_id}>
                 <div className='game_title'>
                   {game.game_media.media[0].title}
                 </div>
