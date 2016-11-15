@@ -11,18 +11,6 @@ class Carousel extends Component {
     this.props.getScores();
   }
 
-  // renderGames() {
-  //   return this.props.scores.map(game => {
-  //     console.log('game: ', game);
-  //     return (
-  //       <div className='thumbnails'>
-  //         <h3>{game.away_team_city} @ {game.home_team_city}</h3>
-  //         <img src={game.video_thumbnails.thumbnail[0].content} />
-  //       </div>
-  //     )
-  //   })
-  // }
-
   render() {
     console.log('this is state in carousel: ', this.props.scores);
     return (
@@ -41,14 +29,7 @@ class Carousel extends Component {
               <div className='game_description'>
                 {game.venue}
               </div>
-            </div>
-
-            // <div className='thumbnails'>
-            //   <h3>{game.away_team_city} @ {game.home_team_city}</h3>
-            //   <div className='img-div'>
-            //     <img src={game.video_thumbnails.thumbnail[0].content} />
-            //   </div>
-            // </div>
+            </div>            
           )
         })}
           </div>
