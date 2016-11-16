@@ -65,7 +65,7 @@ p {
   -webkit-transition: 450ms all;
   transition: 450ms all;
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 .tile__img {
   width: 250px;
@@ -74,23 +74,24 @@ p {
      object-fit: cover;
 }
 
-.tile__details:after,
+/*.tile__details:after,
 .tile__details:before {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   display: #000;
-}
+}*/
 
-.tile:hover .tile__details {
+/*.tile:hover .tile__details {
   opacity: 1;
-}
-.tile__title {
+}*/
+/*.tile__title {
   position: absolute;
   bottom: 0;
   padding: 10px;
-}
+}*/
+
 .row__inner:hover {
   -webkit-transform: translate3d(-125px, 0, 0);
           transform: translate3d(-125px, 0, 0);
