@@ -1,4 +1,3 @@
-###Hi MLBAM!###
 
 ###Getting Started###
 
